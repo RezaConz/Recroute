@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"/>
+
+    <TextView
+        android:id="@+id/pagelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/Black"
+        android:text="Halaman Login"/>
+
+    <LinearLayout
+        android:id="@+id/InputLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/pagelogin"
+        android:padding="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/alamatEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/White"
+                android:paddingLeft="30dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/Pwz"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/White"
+                android:paddingLeft="30dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/HalLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/InputLogin"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_shape"
+        android:textSize="14dp"
+        />
+</RelativeLayout>
