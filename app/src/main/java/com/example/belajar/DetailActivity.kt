@@ -15,13 +15,13 @@ class DetailActivity : AppCompatActivity(){
         setContentView(binding.root)
         replaceFragment(home())
 
-        binding.bottomNavigationView.setOnNavigationItemReselectedListener {
+        binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId) {
-                R.id.text_home-> replaceFragment(home())
-                R.id.text_riwayat -> replaceFragment(riwayat())
-                R.id.text_mycourse -> replaceFragment(myCourse())
-                R.id.text_jobfind -> replaceFragment(jobFind())
-                R.id.text_profil -> replaceFragment(profil())
+                R.id.ic_home -> replaceFragment(home())
+                R.id.ic_riwayat -> replaceFragment(riwayat())
+                R.id.ic_mycourse -> replaceFragment(myCourse())
+                R.id.ic_jobfind -> replaceFragment(jobFind())
+                R.id.ic_profil -> replaceFragment(profil())
             else ->{
 
                 }
