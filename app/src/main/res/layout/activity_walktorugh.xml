@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".walktorugh">
+
+    <ImageView
+        android:id="@+id/imagewt1"
+        android:layout_width="match_parent"
+        android:layout_height="466dp"
+        android:src="@drawable/imagewt1"
+        />
+
+    <TextView
+        android:id="@+id/walktrough1Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagewt1"
+        android:text="Cari Kerja , Kursus \nBersama Recroute"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="@font/robotoregular"
+        android:textSize="24sp"
+        android:textColor="@color/Black"
+        />
+
+    <TextView
+        android:id="@+id/walktrough1Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/walktrough1Text1"
+        android:text="OUR SIGNATURE HERE\nOUR SIGNATURE HERE"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotomedium"
+        android:textSize="14sp"
+        android:textColor="@color/Black"
+        />
+
+    <ImageView
+        android:id="@+id/swipeWt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wt1"
+        android:layout_below="@id/walktrough1Text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/buttonWt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/swipeWt1"
+        android:width="350dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="NEXT"
+        android:textColor="@color/White"
+        android:background="@drawable/button_shape"
+        />
+
+</RelativeLayout>

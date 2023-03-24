@@ -12,6 +12,21 @@
         android:theme="@style/Theme.Belajar"
         tools:targetApi="31">
         <activity
+            android:name=".walktrough3"
+            android:exported="false" />
+        <activity
+            android:name=".walktrough2"
+            android:exported="false" />
+        <activity
+            android:name=".walktorugh"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen2"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="false" />
+        <activity
             android:name=".cobalagi"
             android:exported="false" />
         <activity
