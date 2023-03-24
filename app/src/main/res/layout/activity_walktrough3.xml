@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/White"
-    tools:context=".walktrough3">
+    tools:context=".Walktrough3">
 
     <ImageView
         android:id="@+id/imagewt3"

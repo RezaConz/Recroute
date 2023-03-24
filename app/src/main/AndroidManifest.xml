@@ -12,40 +12,19 @@
         android:theme="@style/Theme.Belajar"
         tools:targetApi="31">
         <activity
-            android:name=".walktrough3"
+            android:name=".Walktrough3"
             android:exported="false" />
         <activity
-            android:name=".walktrough2"
+            android:name=".Walktrough2"
             android:exported="false" />
         <activity
-            android:name=".walktorugh"
+            android:name=".Walktorugh"
             android:exported="false" />
         <activity
-            android:name=".splash_screen2"
+            android:name=".SplashScreen2"
             android:exported="false" />
         <activity
-            android:name=".splash_screen"
-            android:exported="false" />
-        <activity
-            android:name=".cobalagi"
-            android:exported="false" />
-        <activity
-            android:name=".contoh"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,6 +32,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
 
         <meta-data
             android:name="preloaded_fonts"
