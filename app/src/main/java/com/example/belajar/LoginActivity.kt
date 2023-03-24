@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
@@ -13,12 +14,14 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var alamatEmail: EditText
     private lateinit var Pwz: EditText
     private lateinit var HalLogin: Button
+    private lateinit var register: TextView
     private lateinit var progressDialog: ProgressDialog
 
     private fun initComponent() {
         alamatEmail = findViewById(R.id.alamatEmail)
         Pwz = findViewById(R.id.Pwz)
         HalLogin = findViewById(R.id.HalLogin)
+        register = findViewById(R.id.register_login)
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Logging")
         progressDialog.setMessage("Mohon tunggu")
@@ -45,6 +48,10 @@ class LoginActivity : AppCompatActivity() {
             }else{
                 Toast.makeText( this, "Silahkan isi email dan password terlebih dahulu", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        register.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 

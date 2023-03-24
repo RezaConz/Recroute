@@ -10,25 +10,31 @@
         android:id="@+id/img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/shape"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-75dp"
+        android:src="@drawable/register_img"
+        />
 
     <TextView
-        android:id="@+id/pagelogin"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/img"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
+        android:paddingHorizontal="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-75dp"
+        android:textSize="28sp"
         android:textColor="@color/Black"
-        android:text="Halaman Login"/>
+        android:text="@string/signup"/>
 
     <LinearLayout
         android:id="@+id/InputLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/pagelogin"
-        android:padding="30dp">
+        android:layout_below="@id/signup"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="15dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -38,9 +44,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/button_shape"
-                android:backgroundTint="@color/White"
-                android:paddingLeft="30dp"
-                android:hint="Email"
+                android:backgroundTint="@color/EditText"
+                android:padding="30dp"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -53,25 +59,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/button_shape"
-                android:backgroundTint="@color/White"
-                android:paddingLeft="30dp"
-                android:hint="Password"
+                android:backgroundTint="@color/EditText"
+                android:padding="30dp"
+                android:hint="@string/password"
                 android:inputType="textPassword"
-                />
+                android:importantForAutofill="no" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/lupapw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lupapassword"
+        android:layout_below="@id/InputLogin"
+        android:layout_marginStart="238dp"
+        android:textColor="@color/Primary"
+        android:textSize="14sp"
+        />
+
     <Button
         android:id="@+id/HalLogin"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/InputLogin"
-        android:text="Login"
+        android:text="@string/masuktombol"
         android:textColor="#FFFFFF"
         android:background="@drawable/button_shape"
-        android:textSize="14dp"
+        android:textSize="14sp"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/HalLogin"
+        >
+
+        <TextView
+            android:id="@+id/belumpunyaakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/belumpunyakaun"
+            android:textColor="@color/Black"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Primary"
+            android:text="@string/regristertombol"
+            />
+
+    </LinearLayout>
 </RelativeLayout>
