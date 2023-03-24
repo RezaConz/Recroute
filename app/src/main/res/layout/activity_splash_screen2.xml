@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".SplashScreen2">
+
+    <ImageView
+        android:id="@+id/logoSP2"
+        android:src="@drawable/logoblackandwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+
+    <TextView
+        android:id="@+id/splashScreen2Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoSP2"
+        android:text="WELCOME TO OUR \nAPP"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/robotoregular"
+        android:textSize="24sp"
+        android:textColor="@color/Black"
+        />
+
+    <TextView
+        android:id="@+id/splashScreen2Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashScreen2Text1"
+        android:text="OUR SIGNATURE HERE\nOUR SIGNATURE HERE"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotomedium"
+        android:textSize="16sp"
+        android:textColor="@color/Black"
+        />
+
+</RelativeLayout>
