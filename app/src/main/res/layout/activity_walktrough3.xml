@@ -11,16 +11,14 @@
     <ImageView
         android:id="@+id/imagewt3"
         android:layout_width="match_parent"
-        android:layout_height="466dp"
-        android:src="@drawable/imagewt3"
-        />
+        android:layout_height="562dp"
+        android:src="@drawable/imagewt3" />
 
     <TextView
         android:id="@+id/walktrough3Text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imagewt3"
-        android:layout_marginTop="25dp"
         android:text="GET STARTED"
         android:layout_centerHorizontal="true"
         android:gravity="center"
