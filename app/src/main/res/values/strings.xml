@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Recroute</string>
     <string name="nama_burung">Buwung Biru</string>
+    <string name="home">Ini halaman home</string>
+    <string name="jobfind">Ini halaman jobfind</string>
+    <string name="riwayat">Ini halaman riwayat</string>
+    <string name="profil">Ini halaman profil</string>
+    <string name="mycourse">Ini halaman mycourse</string>
 
 </resources>

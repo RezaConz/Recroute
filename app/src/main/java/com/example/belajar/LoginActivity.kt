@@ -7,19 +7,18 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
-    private lateinit var MasukanEmail: EditText
-    private lateinit var MasukanPassword: EditText
-    private lateinit var Login: Button
+    private lateinit var alamatEmail: EditText
+    private lateinit var Pwz: EditText
+    private lateinit var HalLogin: Button
     private lateinit var progressDialog: ProgressDialog
 
     private fun initComponent() {
-        MasukanEmail = findViewById(R.id.masukanEmail)
-        MasukanPassword = findViewById(R.id.masukanPassword)
-        Login = findViewById(R.id.Login)
+        alamatEmail = findViewById(R.id.alamatEmail)
+        Pwz = findViewById(R.id.Pwz)
+        HalLogin = findViewById(R.id.HalLogin)
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Logging")
         progressDialog.setMessage("Mohon tunggu")
@@ -40,8 +39,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         initComponent()
 
-        Login.setOnClickListener{
-            if (MasukanEmail.text.isNotEmpty() && MasukanPassword.text.isNotEmpty()){
+        HalLogin.setOnClickListener{
+            if (alamatEmail.text.isNotEmpty() && Pwz.text.isNotEmpty()){
                 prosesLogin()
             }else{
                 Toast.makeText( this, "Silahkan isi email dan password terlebih dahulu", Toast.LENGTH_SHORT).show()
@@ -50,8 +49,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun prosesLogin(){
-        val email = MasukanEmail.text.toString()
-        val password = MasukanPassword.text.toString()
+        val email = alamatEmail.text.toString()
+        val password = Pwz.text.toString()
         progressDialog.show()
 
         firebaseAuth.signInWithEmailAndPassword(email, password)

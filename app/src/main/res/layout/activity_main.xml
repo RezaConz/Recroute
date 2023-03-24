@@ -96,8 +96,6 @@
         android:id="@+id/Daftar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="25dp"
-        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/Input"
         android:text="Daftar"

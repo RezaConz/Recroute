@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Belajar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.Belajar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/Primary</item>
         <item name="colorSecondary">@color/Secondary</item>
         <item name="colorAccent">@color/Black</item>
