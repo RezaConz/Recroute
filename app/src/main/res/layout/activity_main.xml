@@ -44,7 +44,7 @@
             android:layout_height="50dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/White"
-            android:padding="30dp"
+            android:paddingLeft="30dp"
             android:hint="Full Name"
             android:inputType="text"
             />
@@ -58,7 +58,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/White"
-                android:padding="30dp"
+                android:paddingLeft="30dp"
                 android:hint="Email Adress"
                 android:inputType="textWebEmailAddress"
                 />
@@ -73,11 +73,12 @@
                 android:layout_height="50dp"
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/White"
-                android:padding="30dp"
+                android:paddingLeft="30dp"
                 android:hint="Password"
                 android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 
     <Button

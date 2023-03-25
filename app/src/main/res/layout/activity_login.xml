@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_text_shape"
-                android:padding="30dp"
+                android:paddingLeft="30dp"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 />
@@ -58,9 +58,8 @@
                 android:id="@+id/Pwz"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/button_shape"
-                android:backgroundTint="@color/White"
-                android:padding="30dp"
+                android:background="@drawable/edit_text_shape"
+                android:paddingLeft="30dp"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 />
