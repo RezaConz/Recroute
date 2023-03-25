@@ -44,7 +44,7 @@
             android:layout_height="50dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/White"
-            android:paddingLeft="30dp"
+            android:padding="30dp"
             android:hint="Full Name"
             android:inputType="text"
             />
@@ -58,7 +58,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/White"
-                android:paddingLeft="30dp"
+                android:padding="30dp"
                 android:hint="Email Adress"
                 android:inputType="textWebEmailAddress"
                 />
@@ -73,27 +73,11 @@
                 android:layout_height="50dp"
                 android:background="@drawable/button_shape"
                 android:backgroundTint="@color/White"
-                android:paddingLeft="30dp"
+                android:padding="30dp"
                 android:hint="Password"
                 android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:passwordToggleEnabled="true"-->
-<!--            >-->
-<!--            <EditText-->
-<!--                android:id="@+id/MasukanConfirmPassword"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="50dp"-->
-<!--                android:background="@drawable/button_shape"-->
-<!--                android:backgroundTint="@color/White"-->
-<!--                android:paddingLeft="30dp"-->
-<!--                android:hint="Confiirm Password"-->
-<!--                android:inputType="textPassword"-->
-<!--                />-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
     </LinearLayout>
 
     <Button

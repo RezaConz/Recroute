@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".profil">
 
     <RelativeLayout
+        android:id="@+id/testing"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -18,6 +19,18 @@
             android:textColor="@color/Primary"
             android:layout_centerInParent="true"
             />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_profil"
+            android:layout_marginTop="25dp"
+            android:text="Log Out"
+            android:textColor="@color/White"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_shape"
+            />
     </RelativeLayout>
 
-</FrameLayout>
+</RelativeLayout>

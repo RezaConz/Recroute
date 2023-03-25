@@ -1,10 +1,13 @@
 package com.example.belajar
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.belajar.databinding.FragmentProfilBinding
+import com.google.firebase.auth.FirebaseAuth
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +24,8 @@ class profil : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private lateinit var binding: FragmentProfilBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,9 +39,20 @@ class profil : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profil, container, false)
+//        return inflater.inflate(R.layout.fragment_profil, container, false)
+        binding = FragmentProfilBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
+    var firebaseAuth = FirebaseAuth.getInstance()
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.logout.setOnClickListener{
+            firebaseAuth.signOut()
+            startActivity(Intent(context, LoginActivity::class.java))
+            activity?.finish()
+        }
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
