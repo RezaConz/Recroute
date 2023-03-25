@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imagewt2"
         android:layout_width="match_parent"
-        android:layout_height="466dp"
+        android:layout_height="534dp"
         android:src="@drawable/imagewt2"
         />
 

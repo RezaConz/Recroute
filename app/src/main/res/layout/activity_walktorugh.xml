@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imagewt1"
-        android:layout_width="match_parent"
-        android:layout_height="466dp"
+        android:layout_width="379dp"
+        android:layout_height="534dp"
         android:src="@drawable/imagewt1"
         />
 

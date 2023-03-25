@@ -25,9 +25,9 @@
         android:text="Let’s Get Your \nDream Job \nWith Recroute"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:textSize="28sp"
-        android:fontFamily="@font/robotomedium"
+        android:layout_marginTop="50dp"
+        android:textSize="32sp"
+        android:fontFamily="@font/robotoregular"
         android:textColor="@color/Black"
         />
 
