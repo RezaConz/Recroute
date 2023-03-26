@@ -44,8 +44,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_text_shape"
-                android:paddingLeft="30dp"
-                android:hint="@string/email"
+                android:drawableStart="@drawable/email_input"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:hint="  Masukan email"
                 android:inputType="textEmailAddress"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -59,8 +61,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_text_shape"
-                android:paddingLeft="30dp"
-                android:hint="@string/password"
+                android:drawableStart="@drawable/password_input"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:hint="  Masukan kata sandi"
                 android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>

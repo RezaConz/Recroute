@@ -27,8 +27,8 @@ class DetailActivity : AppCompatActivity(){
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.ic_home -> replaceFragment(home())
-                R.id.ic_riwayat -> replaceFragment(riwayat())
-                R.id.ic_mycourse -> replaceFragment(myCourse())
+                R.id.ic_mycourse -> replaceFragment(riwayat())
+                R.id.ic_ranking -> replaceFragment(myCourse())
                 R.id.ic_jobfind -> replaceFragment(jobFind())
                 R.id.ic_profil -> replaceFragment(profil())
             else ->{
