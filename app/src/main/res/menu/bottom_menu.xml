@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/ic_home"
-        android:icon="@drawable/home_button"
-        android:title="Home"/>
+        android:icon="@drawable/home_2"
+        app:showAsAction="ifRoom"
+        android:title="Home"
+        />
     <item
         android:id="@+id/ic_mycourse"
-        android:icon="@drawable/book_person"
+        android:icon="@drawable/course"
+        app:showAsAction="ifRoom"
         android:title="Mycourse"
         />
     <item
-        android:id="@+id/ic_riwayat"
-        android:icon="@drawable/card"
+        android:id="@+id/ic_ranking"
+        android:icon="@drawable/ranking"
+        app:showAsAction="ifRoom"
         android:title="Riwayat"/>
     <item
         android:id="@+id/ic_jobfind"
-        android:icon="@drawable/bag"
+        android:icon="@drawable/jobs"
+        app:showAsAction="ifRoom"
         android:title="JobFind"/>
     <item
         android:id="@+id/ic_profil"
-        android:icon="@drawable/ic_btn_profil"
+        android:icon="@drawable/profil"
+        app:showAsAction="ifRoom"
         android:title="Profil"/>
 </menu>
