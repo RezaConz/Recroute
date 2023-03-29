@@ -13,7 +13,6 @@ import com.google.firebase.auth.FirebaseAuth
 class DetailActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityDetailBinding
-//    private lateinit var binding_profil: FragmentProfilBinding
 
     var firebaseAuth = FirebaseAuth.getInstance()
 
@@ -37,6 +36,7 @@ class DetailActivity : AppCompatActivity(){
             }
             true
         }
+
     }
 
     private fun replaceFragment(fragment: Fragment){
