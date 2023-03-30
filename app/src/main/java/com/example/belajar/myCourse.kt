@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
+import com.example.belajar.databinding.ActivityDetailBinding
 import com.example.belajar.databinding.FragmentMyCourseBinding
 import com.example.belajar.databinding.FragmentWebdeveloperBinding
 
@@ -19,31 +20,23 @@ class myCourse : Fragment(), View.OnClickListener {
         super.onCreate(savedInstanceState)
     }
 
-    private lateinit var bindind : FragmentMyCourseBinding
+    private lateinit var binding : FragmentMyCourseBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        bindind = FragmentMyCourseBinding.inflate(inflater,container,false)
-        return bindind.root
+        binding = FragmentMyCourseBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        bindind.webDev.setOnClickListener (this)
-//        bindind.webDev.setOnClickListener {
-//            fragmentManager?.beginTransaction()?.apply {
-//                replace(
-//                    R.id.Frame_mycourse,
-//                    WebdeveloperFragment(),
-//                    WebdeveloperFragment::class.java.simpleName)
-//                    .addToBackStack(null)
-//                    .commit()
-//            }
-//        }
+        binding.webDev.setOnClickListener (this)
+
+
     }
 
     override fun onClick(v: View) {
@@ -51,7 +44,7 @@ class myCourse : Fragment(), View.OnClickListener {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
-                    R.id.Frame_mycourse,
+                    R.id.frame_layout,
                     WebdeveloperFragment(),
                     WebdeveloperFragment::class.java.simpleName
                 )

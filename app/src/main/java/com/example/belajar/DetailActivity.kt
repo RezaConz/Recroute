@@ -9,6 +9,7 @@ import com.example.belajar.databinding.ActivityDetailBinding
 import com.example.belajar.databinding.FragmentHomeBinding
 import com.example.belajar.databinding.FragmentProfilBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DetailActivity : AppCompatActivity(){
 
@@ -39,7 +40,7 @@ class DetailActivity : AppCompatActivity(){
 
     }
 
-    private fun replaceFragment(fragment: Fragment){
+     public fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frame_layout,fragment)
