@@ -5,7 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".myCourse">
-
+    <FrameLayout
+        android:id="@+id/Frame_mycourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     <TextView
         android:id="@+id/course"
         android:layout_width="148dp"
@@ -204,5 +207,4 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>
