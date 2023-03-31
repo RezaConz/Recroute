@@ -8,29 +8,81 @@
     android:background="@color/White"
     tools:context=".SplashScreen">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
     <ImageView
         android:id="@+id/logoSP1"
-        android:src="@drawable/logocolor"
+        android:src="@drawable/logo_besar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="200dp"
         />
 
-    <TextView
-        android:id="@+id/splashScreen1Text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logoSP1"
-        android:text="Let’s Get Your \nDream Job \nWith Recroute"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:textSize="32sp"
-        android:fontFamily="@font/robotoregular"
-        android:textColor="@color/Black"
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center">
 
+            <TextView
+                android:id="@+id/splashScreen1Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Boost your "
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/splashScreen1Text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Skills"
+                android:textColor="@color/Primary"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/splashScreen1Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text=","
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/splashScreen1Text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Land your "
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/splashScreen1Text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Dream Job"
+                android:textColor="@color/Secondary900"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>

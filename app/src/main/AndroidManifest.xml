@@ -12,9 +12,6 @@
         android:theme="@style/Theme.Belajar"
         tools:targetApi="31">
         <activity
-            android:name=".WebdeveloperActivity"
-            android:exported="false" />
-        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>

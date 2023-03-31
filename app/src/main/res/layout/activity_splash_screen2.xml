@@ -6,43 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/White"
-    tools:context=".SplashScreen2">
+    tools:context=".SplashScreen">
 
-    <ImageView
-        android:id="@+id/logoSP2"
-        android:src="@drawable/logoblackandwhite"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
-        />
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
 
-    <TextView
-        android:id="@+id/splashScreen2Text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logoSP2"
-        android:text="WELCOME TO OUR \nAPP"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="300dp"
-        android:fontFamily="@font/robotoregular"
-        android:textSize="24sp"
-        android:textColor="@color/Black"
-        />
+        <ImageView
+            android:id="@+id/logoSP1"
+            android:src="@drawable/logo_besar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_horizontal"
+            />
 
-    <TextView
-        android:id="@+id/splashScreen2Text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/splashScreen2Text1"
-        android:text="OUR SIGNATURE HERE\nOUR SIGNATURE HERE"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/robotomedium"
-        android:textSize="16sp"
-        android:textColor="@color/Black"
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center">
 
+            <TextView
+                android:id="@+id/splashScreen1Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotobold"
+                android:text="WELCOME TO OUR APP"
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/splashScreen1Text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Our Signature HereLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
+                android:textColor="@color/Black"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

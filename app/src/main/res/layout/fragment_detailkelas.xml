@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailkelasFragment">
+
+    <TextView
+        android:id="@+id/web_develop"
+        android:layout_width="155dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="&lt; Detail kelas"
+        android:fontFamily="@font/robotobold"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_vertical"
+        />
+
+</RelativeLayout>
