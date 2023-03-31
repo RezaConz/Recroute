@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="Primary">#0B6EFE</color>
+    <color name="Primary50">#71AAFE</color>
+    <color name="Primary300">#3E8CFE</color>
+    <color name="Primary500">#0B6EFE</color>
+    <color name="Primary700">#0157D5</color>
     <color name="Primary900">#0143A3</color>
+
+    <color name="Neutral50"> #F8FAFC</color>
+    <color name="Neutral100"> #F1F5F9</color>
+    <color name="Neutral200"> #E2E8F0</color>
+    <color name="Neutral300"> #CBD5E1</color>
+    <color name="Neutral400"> #94A3B8</color>
+    <color name="Neutral500"> #64748B</color>
+    <color name="Neutral600"> #475569</color>
+    <color name="Neutral700"> #334155</color>
+    <color name="Neutral800"> #1E293B</color>
+    <color name="Neutral900"> #0F172A</color>
+
     <color name="Secondary">#55BBAF</color>
+    <color name="Secondary300">#FFD66B</color>
+    <color name="Secondary500">#FFC83A</color>
+    <color name="Secondary700">#FFB905</color>
+    <color name="Secondary900">#D19700</color>
+
     <color name="Black">#000000</color>
     <color name="White">#FFFFFF</color>
     <color name="EditText">#D9D9D9</color>
     <color name="Black800">#1E293B</color>
+    <color name="Harga">#D19700</color>
+
+    <color name="Warning50">#FFA470</color>
+    <color name="Warning300">#FF833D</color>
+    <color name="Warning500">#FF630B</color>
+    <color name="Warning700">#D64D00</color>
+    <color name="Warning900">#A33B00</color>
+
 </resources>

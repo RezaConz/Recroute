@@ -11,21 +11,21 @@
         android:id="@+id/ic_mycourse"
         android:icon="@drawable/course"
         app:showAsAction="ifRoom"
-        android:title="Mycourse"
+        android:title="Course"
         />
     <item
         android:id="@+id/ic_ranking"
         android:icon="@drawable/ranking"
         app:showAsAction="ifRoom"
-        android:title="Riwayat"/>
+        android:title="Leaderboard"/>
     <item
         android:id="@+id/ic_jobfind"
         android:icon="@drawable/jobs"
         app:showAsAction="ifRoom"
-        android:title="JobFind"/>
+        android:title="Jobs"/>
     <item
         android:id="@+id/ic_profil"
         android:icon="@drawable/profil"
         app:showAsAction="ifRoom"
-        android:title="Profil"/>
+        android:title="Profile"/>
 </menu>
