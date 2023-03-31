@@ -10,39 +10,43 @@
 
     <ImageView
         android:id="@+id/logoSP2"
-        android:src="@drawable/logoblackandwhite"
+        android:src="@drawable/logorecroute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="200dp"
         />
 
-    <TextView
-        android:id="@+id/splashScreen2Text1"
+    <ImageView
+        android:id="@+id/recrouteText"
+        android:src="@drawable/recroutetext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logoSP2"
-        android:text="WELCOME TO OUR \nAPP"
+        android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="300dp"
-        android:fontFamily="@font/robotoregular"
-        android:textSize="24sp"
-        android:textColor="@color/Black"
         />
+
+    <ImageView
+        android:id="@+id/welcomeText"
+        android:layout_width="179dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/recrouteText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="202dp"
+        android:src="@drawable/welcomerecroute" />
 
     <TextView
         android:id="@+id/splashScreen2Text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/splashScreen2Text1"
-        android:text="OUR SIGNATURE HERE\nOUR SIGNATURE HERE"
+        android:layout_width="272dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/welcomeText"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/robotomedium"
-        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Temukan keterampilan baru dan \npekerjaan impian Anda bersama \nRecroute"
         android:textColor="@color/Black"
-        />
+        android:textSize="16sp" />
 
 </RelativeLayout>
