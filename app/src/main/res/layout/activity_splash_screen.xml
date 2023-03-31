@@ -8,35 +8,81 @@
     android:background="@color/White"
     tools:context=".SplashScreen">
 
-    <ImageView
-        android:id="@+id/logoSP1"
-        android:src="@drawable/logorecroute"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/logoSP1"
+        android:src="@drawable/logo_besar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         />
 
-    <ImageView
-        android:id="@+id/recrouteText"
-        android:src="@drawable/recroutetext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logoSP1"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center">
 
-    <ImageView
-        android:id="@+id/splashScreen1Text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/recrouteText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:gravity="center"
-        android:src="@drawable/tagline_recroute"
-        android:scaleType="fitCenter"
-        />
+            <TextView
+                android:id="@+id/splashScreen1Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Boost your "
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/splashScreen1Text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Skills"
+                android:textColor="@color/Primary"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/splashScreen1Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text=","
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/splashScreen1Text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Land your "
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/splashScreen1Text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotomedium"
+                android:text="Dream Job"
+                android:textColor="@color/Secondary900"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
 
 </RelativeLayout>
