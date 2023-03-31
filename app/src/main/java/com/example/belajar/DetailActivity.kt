@@ -23,7 +23,6 @@ class DetailActivity : AppCompatActivity(){
         setContentView(binding.root)
         replaceFragment(home())
 
-
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.ic_home -> replaceFragment(home())
