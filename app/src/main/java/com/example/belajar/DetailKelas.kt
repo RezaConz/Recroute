@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.belajar.databinding.FragmentPembayaranBinding
+import com.example.belajar.databinding.FragmentDetailKelasBinding
 import com.example.belajar.databinding.FragmentWebdeveloperBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -15,58 +15,72 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Pembayaran.newInstance] factory method to
+ * Use the [DetailKelas.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Pembayaran : Fragment(), View.OnClickListener {
-   override fun onCreate(savedInstanceState: Bundle?) {
+class DetailKelas : Fragment(),  View.OnClickListener{
+    // TODO: Rename and change types of parameters
+    private var param1: String? = null
+    private var param2: String? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
-    private lateinit var binding : FragmentPembayaranBinding
+    private lateinit var binding : FragmentDetailKelasBinding
+
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        arguments?.let {
+//            param1 = it.getString(ARG_PARAM1)
+//            param2 = it.getString(ARG_PARAM2)
+//        }
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentPembayaranBinding.inflate(inflater, container, false)
+        binding = FragmentDetailKelasBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.buttonpembayaran.setOnClickListener(this)
-        binding.Backpembayaran.setOnClickListener(this)
+
+        binding.buttonDetailKelas.setOnClickListener(this)
+        binding.backDetailKelas.setOnClickListener(this)
+
+
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.buttonpembayaran) {
+        if (v.id == R.id.buttonDetailKelas) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    CheckOut(),
-                    CheckOut::class.java.simpleName
+                    Pembayaran(),
+                    Pembayaran::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
             }
         }
-        if (v.id == R.id.Backpembayaran) {
+        if (v.id == R.id.backDetailKelas) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    DetailKelas(),
-                    DetailKelas::class.java.simpleName
+                    myCourse(),
+                    myCourse::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
             }
         }
     }
-
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -74,12 +88,12 @@ class Pembayaran : Fragment(), View.OnClickListener {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Pembayaran.
+         * @return A new instance of fragment DetailKelas.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Pembayaran().apply {
+            DetailKelas().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

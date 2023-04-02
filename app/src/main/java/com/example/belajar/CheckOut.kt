@@ -1,12 +1,13 @@
 package com.example.belajar
 
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.belajar.databinding.FragmentPembayaranBinding
-import com.example.belajar.databinding.FragmentWebdeveloperBinding
+import com.example.belajar.databinding.FragmentCheckOutBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,51 +16,52 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Pembayaran.newInstance] factory method to
+ * Use the [CheckOut.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Pembayaran : Fragment(), View.OnClickListener {
-   override fun onCreate(savedInstanceState: Bundle?) {
+class CheckOut : Fragment(), View.OnClickListener {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
-    private lateinit var binding : FragmentPembayaranBinding
-
+    private lateinit var binding: FragmentCheckOutBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentPembayaranBinding.inflate(inflater, container, false)
+        binding = FragmentCheckOutBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.buttonpembayaran.setOnClickListener(this)
-        binding.Backpembayaran.setOnClickListener(this)
+        binding.backNotifikasi.setOnClickListener(this)
+        binding.buttonBayar.setOnClickListener(this)
+        binding.copyButton.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.buttonpembayaran) {
+        if (v.id == R.id.backNotifikasi){
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    CheckOut(),
-                    CheckOut::class.java.simpleName
+                    Pembayaran(),
+                    Pembayaran::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
             }
         }
-        if (v.id == R.id.Backpembayaran) {
+        if (v.id == R.id.buttonBayar) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    DetailKelas(),
-                    DetailKelas::class.java.simpleName
+                    Notifikasi(),
+                    Notifikasi::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
@@ -74,12 +76,12 @@ class Pembayaran : Fragment(), View.OnClickListener {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Pembayaran.
+         * @return A new instance of fragment CheckOut.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Pembayaran().apply {
+            CheckOut().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

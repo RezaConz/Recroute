@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.belajar.databinding.FragmentWebdeveloperBinding
 import androidx.fragment.app.FragmentTransaction
+import com.example.belajar.databinding.FragmentDetailKelasBinding
 
 class WebdeveloperFragment : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
@@ -36,8 +37,8 @@ class WebdeveloperFragment : Fragment(), View.OnClickListener {
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    DetailkelasFragment(),
-                    DetailkelasFragment::class.java.simpleName
+                    DetailKelas(),
+                    DetailKelas::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()

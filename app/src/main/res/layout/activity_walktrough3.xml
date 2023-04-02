@@ -8,61 +8,100 @@
     android:background="@color/White"
     tools:context=".Walktrough3">
 
-    <ImageView
-        android:id="@+id/imagewt3"
-        android:layout_width="match_parent"
-        android:layout_height="562dp"
-        android:src="@drawable/imagewt3"
-        />
-
-    <TextView
-        android:id="@+id/walktrough3Text1"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imagewt3"
-        android:text="GET STARTED"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:fontFamily="@font/robotoregular"
-        android:textSize="24sp"
-        android:textColor="@color/Black"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
 
-    <TextView
-        android:id="@+id/walktrough3Text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/walktrough3Text1"
-        android:text="OUR SIGNATURE HERE\nOUR SIGNATURE HERE"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/robotomedium"
-        android:textSize="14sp"
-        android:textColor="@color/Black"
-        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imagewt3"
+            android:scaleType="fitXY"/>
 
-    <ImageView
-        android:id="@+id/swipeWt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/wt3"
-        android:layout_below="@id/walktrough3Text2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonWt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/swipeWt3"
-        android:width="350dp"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        android:text="Masuk / Daftar"
-        android:textColor="@color/White"
-        android:background="@drawable/button_shape"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:textSize="22sp"
+                android:fontFamily="@font/robotobold"
+                android:textColor="@color/Neutral800"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\t\tMulailah perjalanan dari hari ini!"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/Neutral800"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\tBergabunglah sekarang dan buka"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/Neutral800"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kemungkinan tak terbatas untuk masa"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/Neutral800"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\t\t\t\t\t\t\t\t\t\t\t\tdepan Anda!"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/Neutral800"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wt3"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonWt3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:width="350dp"
+            android:background="@drawable/button_shape"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+    </LinearLayout>
 </RelativeLayout>

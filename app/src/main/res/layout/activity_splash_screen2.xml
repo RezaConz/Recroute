@@ -8,45 +8,64 @@
     android:background="@color/White"
     tools:context=".SplashScreen2">
 
-    <ImageView
-        android:id="@+id/logoSP2"
-        android:src="@drawable/logorecroute"
+    <LinearLayout
+        android:id="@+id/layout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        />
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
 
-    <ImageView
-        android:id="@+id/recrouteText"
-        android:src="@drawable/recroutetext"
+        <ImageView
+            android:id="@+id/logoSP2"
+            android:layout_width="253dp"
+            android:layout_height="181dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo_besar" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logoSP2"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        />
+        android:orientation="vertical"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true">
 
-    <ImageView
-        android:id="@+id/welcomeText"
-        android:layout_width="179dp"
-        android:layout_height="75dp"
-        android:layout_below="@+id/recrouteText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="202dp"
-        android:src="@drawable/welcomerecroute" />
+            <TextView
+                android:id="@+id/splashScreen2Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logoSP2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotobold"
+                android:text="WELCOME TO OUR APP"
+                android:textColor="@color/Neutral800"
+                android:textSize="26sp" />
 
-    <TextView
-        android:id="@+id/splashScreen2Text2"
-        android:layout_width="272dp"
-        android:layout_height="69dp"
-        android:layout_below="@+id/welcomeText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/robotomedium"
-        android:gravity="center"
-        android:text="Temukan keterampilan baru dan \npekerjaan impian Anda bersama \nRecroute"
-        android:textColor="@color/Black"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/splashScreen2Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/logoSP2"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotoregular"
+            android:text="Temukan keterampilan baru dan pekerjaan"
+            android:textColor="@color/Neutral800"
+            android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/splashScreen2Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoSP2"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotoregular"
+            android:text="impian Anda bersama Recroute"
+            android:textColor="@color/Neutral800"
+            android:textSize="16sp" />
+
+    </LinearLayout>
 </RelativeLayout>

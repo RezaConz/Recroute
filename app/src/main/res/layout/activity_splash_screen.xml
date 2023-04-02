@@ -14,19 +14,20 @@
         android:orientation="vertical"
         android:layout_centerHorizontal="true">
 
-    <ImageView
-        android:id="@+id/logoSP1"
-        android:src="@drawable/logo_besar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        />
+        <ImageView
+            android:id="@+id/logoSP1"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo_besar" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="90dp"
             android:layout_gravity="center">
 
             <TextView
@@ -34,19 +35,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/robotomedium"
+                android:fontFamily="@font/robotobold"
                 android:text="Boost your "
-                android:textColor="@color/Black"
-                android:textSize="24sp" />
+                android:textColor="@color/Neutral800"
+                android:textSize="26sp" />
             <TextView
                 android:id="@+id/splashScreen1Text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/robotomedium"
+                android:fontFamily="@font/robotobold"
                 android:text="Skills"
                 android:textColor="@color/Primary"
-                android:textSize="24sp" />
+                android:textSize="26sp" />
             <TextView
                 android:id="@+id/splashScreen1Text3"
                 android:layout_width="wrap_content"
@@ -55,7 +56,7 @@
                 android:fontFamily="@font/robotomedium"
                 android:text=","
                 android:textColor="@color/Black"
-                android:textSize="24sp" />
+                android:textSize="26sp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -68,19 +69,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/robotomedium"
+                android:fontFamily="@font/robotobold"
                 android:text="Land your "
-                android:textColor="@color/Black"
-                android:textSize="24sp" />
+                android:textColor="@color/Neutral800"
+                android:textSize="26sp" />
             <TextView
                 android:id="@+id/splashScreen1Text5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/robotomedium"
+                android:fontFamily="@font/robotobold"
                 android:text="Dream Job"
                 android:textColor="@color/Secondary900"
-                android:textSize="24sp" />
+                android:textSize="26sp" />
         </LinearLayout>
     </LinearLayout>
 
