@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.belajar.home"
+        android:label="homee"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_mycourse"
+        android:name="com.example.belajar.CourseFragment"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course" />
+    <fragment
+        android:id="@+id/nav_pesanan"
+        android:name="com.example.belajar.PesananFragment"
+        android:label="fragment_pesanan"
+        tools:layout="@layout/fragment_pesanan" />
+    <fragment
+        android:id="@+id/nav_notif"
+        android:name="com.example.belajar.NotifFragment"
+        android:label="fragment_notif"
+        tools:layout="@layout/fragment_notif" />
+    <fragment
+        android:id="@+id/nav_reward"
+        android:name="com.example.belajar.RewardFragment"
+        android:label="fragment_reward"
+        tools:layout="@layout/fragment_reward" />
+
+</navigation>

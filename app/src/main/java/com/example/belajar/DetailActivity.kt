@@ -1,15 +1,15 @@
 package com.example.belajar
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.belajar.databinding.ActivityDetailBinding
+import com.example.belajar.databinding.ActivityMaindrawerBinding
 import com.example.belajar.databinding.FragmentHomeBinding
-import com.example.belajar.databinding.FragmentProfilBinding
 import com.google.firebase.auth.FirebaseAuth
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DetailActivity : AppCompatActivity(){
 
@@ -37,12 +37,23 @@ class DetailActivity : AppCompatActivity(){
             true
         }
 
+//        setSupportActionBar(binding.toolbar)
+//        val toggle = ActionBarDrawerToggle(this, binding.drawerLayout,R.string.OpenDrawer,R.string.CloseDrawer)
+//        binding.drawerLayout.addDrawerListener(toggle)
+//        toggle.syncState()
     }
-
-     public fun replaceFragment(fragment: Fragment){
+//    override fun onBackPressed() {
+//        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+//            binding.drawerLayout.closeDrawer(GravityCompat.START)
+//        } else {
+//            super.onBackPressed()
+//        }
+//    }
+    fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame_layout,fragment)
+        fragmentTransaction.replace(R.id.frame_layout, fragment)
         fragmentTransaction.commit()
     }
+
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,17 +8,43 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        >
 
-        <TextView
-            android:id="@+id/text_riwayat"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/frame_leaderboard" />
+
+        <ImageView
+            android:id="@+id/userstat"
+            android:layout_width="340dp"
+            android:scaleType="fitXY"
             android:layout_height="wrap_content"
-            android:text="@string/riwayat"
-            android:textSize="25sp"
-            android:textColor="@color/Primary"
-            android:layout_centerInParent="true"
-            />
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:src="@drawable/user_stats" />
+
+        <ImageView
+            android:layout_width="340dp"
+            android:scaleType="fitXY"
+            android:layout_height="600dp"
+            android:layout_below="@id/userstat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/leaderboard" />
+
     </RelativeLayout>
 
-</FrameLayout>
+</ScrollView>
