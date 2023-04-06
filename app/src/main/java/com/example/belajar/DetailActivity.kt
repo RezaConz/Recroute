@@ -1,15 +1,10 @@
 package com.example.belajar
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.belajar.databinding.ActivityDetailBinding
-import com.example.belajar.databinding.FragmentHomeBinding
-import com.example.belajar.databinding.FragmentProfilBinding
 import com.google.firebase.auth.FirebaseAuth
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DetailActivity : AppCompatActivity(){
 
@@ -28,7 +23,7 @@ class DetailActivity : AppCompatActivity(){
                 R.id.ic_home -> replaceFragment(home())
                 R.id.ic_mycourse -> replaceFragment(myCourse())
                 R.id.ic_ranking -> replaceFragment(ranking())
-                R.id.ic_jobfind -> replaceFragment(jobFind())
+                R.id.ic_jobfind -> replaceFragment(JobFinder2())
                 R.id.ic_profil -> replaceFragment(profil())
             else ->{
 

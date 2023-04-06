@@ -21,7 +21,7 @@
             android:text="&lt; Detail kelas"
             android:fontFamily="@font/robotobold"
             android:textColor="@color/Black"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:lineSpacingExtra="5sp"
             android:gravity="center_vertical"
             />
@@ -61,7 +61,7 @@
                 android:text="\tJobilee Enterprise"
                 android:fontFamily="@font/robotomedium"
                 android:textSize="12sp"
-                android:textColor="@color/Black"/>
+                android:textColor="@color/Neutral800"/>
         </LinearLayout>
 
         <TextView
@@ -82,7 +82,7 @@
             android:text="UI/UX Designer"
             android:textSize="11sp"
             android:paddingStart="30dp"
-            android:textColor="@color/Black"
+            android:textColor="@color/Neutral800"
             android:fontFamily="@font/robotomedium"
             />
 
@@ -112,7 +112,7 @@
                     android:textSize="11sp" />
 
                 <TextView
-                    android:id="@+id/emailPembayaran"
+                    android:id="@+id/showMoreText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -162,7 +162,7 @@
             android:text="Desain Visual"
             android:textSize="11sp"
             android:paddingStart="30dp"
-            android:textColor="@color/Black"
+            android:textColor="@color/Neutral800"
             android:fontFamily="@font/robotomedium"
             />
 
@@ -173,14 +173,6 @@
             android:paddingStart="30dp"
             android:scaleType="fitXY"
             android:src="@drawable/materi_desain_visual" />
-        <!--        <ImageView-->
-<!--            android:id="@+id/detailKelas"-->
-<!--            android:layout_width="361dp"-->
-<!--            android:layout_height="614dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:paddingStart="25dp"-->
-<!--            android:scaleType="fitXY"-->
-<!--            android:src="@drawable/tampilan_detail_kelas" />-->
 
         <Button
             android:id="@+id/buttonDetailKelas"

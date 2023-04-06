@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.belajar.databinding.FragmentCheckOutBinding
+import com.example.belajar.databinding.FragmentMyCourseAktifBinding
+import com.example.belajar.databinding.FragmentMyCourseSelesaiBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,25 +19,43 @@ private const val ARG_PARAM2 = "param2"
  * Use the [MyCourseAktif.newInstance] factory method to
  * create an instance of this fragment.
  */
-class MyCourseAktif : Fragment() {
+class MyCourseAktif : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
+    private lateinit var binding: FragmentMyCourseAktifBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_course_aktif, container, false)
+        binding = FragmentMyCourseAktifBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.MyCourseAktif.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View) {
+        if (v.id == R.id.MyCourseAktif){
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    MyCourseSelesai(),
+                    MyCourseSelesai::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
     }
 
     companion object {

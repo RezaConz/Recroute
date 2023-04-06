@@ -24,7 +24,7 @@
             android:lineSpacingExtra="5sp"
             android:text="&lt; Detail Pembayaran"
             android:textColor="@color/Black"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/PembayaranSukses"

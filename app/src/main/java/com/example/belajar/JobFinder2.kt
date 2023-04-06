@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.belajar.databinding.FragmentCheckOutBinding
-import com.example.belajar.databinding.FragmentMyCourseSelesaiBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,43 +13,28 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [MyCourseSelesai.newInstance] factory method to
+ * Use the [JobFinder2.newInstance] factory method to
  * create an instance of this fragment.
  */
-class MyCourseSelesai : Fragment(), View.OnClickListener {
+class JobFinder2 : Fragment() {
     // TODO: Rename and change types of parameters
+    private var param1: String? = null
+    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        arguments?.let {
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
+        }
     }
-    private lateinit var binding: FragmentMyCourseSelesaiBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentMyCourseSelesaiBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding.MyCourseSelesai.setOnClickListener(this)
-    }
-
-    override fun onClick(v: View) {
-        if (v.id == R.id.MyCourseSelesai){
-            val mFragmentManager = parentFragmentManager
-            mFragmentManager.beginTransaction().apply {
-                replace(
-                    R.id.frame_layout,
-                    MyCourseAktif(),
-                    MyCourseAktif::class.java.simpleName
-                )
-                addToBackStack(null)
-                commit()
-            }
-        }
+        return inflater.inflate(R.layout.fragment_job_finder2, container, false)
     }
 
     companion object {
@@ -61,12 +44,12 @@ class MyCourseSelesai : Fragment(), View.OnClickListener {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment MyCourseSelesai.
+         * @return A new instance of fragment jobFind.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            MyCourseSelesai().apply {
+            JobFinder2().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

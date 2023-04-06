@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".JobFinder">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingStart="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pencari Pekerjaan"
+                android:fontFamily="@font/robotobold"
+                android:textSize="20sp"
+                android:textColor="@color/Neutral800"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/JobFinderJOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30sp"
+            android:backgroundTint="#3E8CFE"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="151dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_white"
+                    android:text="Job"
+                    android:fontFamily="@font/robotobold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Terkirim"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ParagonCorp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30sp"
+            android:backgroundTint="@color/Secondary500"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Paragon Corp."
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/Neutral900"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/UXDesigner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30sp"
+            android:backgroundTint="@color/Primary10"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/UXDesignerBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Primary500"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="UX Designer"
+                        android:fontFamily="@font/robotomedium"
+                        android:textColor="@color/White"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/UXDesignerBlueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/White"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Kami mencari UX designer yang memiliki kemampuan untuk memahami kebutuhan pengguna dan menghasilkan desain yang inovatif dan intuitif untuk produk kami. Jika Anda memiliki keterampilan tersebut, kami ingin Anda bergabung dengan perusahaan kami."
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/Neutral800"
+                        android:textSize="15sp" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/WebDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30sp"
+            android:backgroundTint="@color/Primary10"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/WebDeveloperBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Primary500"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Web Developer"
+                        android:fontFamily="@font/robotomedium"
+                        android:textColor="@color/White"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/WebDeveloperText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/White"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Kami mencari web developer yang kreatif dan terampil dalam mengembangkan situs web yang responsif dan mudah digunakan. Jika Anda memiliki kemampuan ini, kami ingin Anda bergabung dengan perusahaan kami dan berkontribusi dalam mengembangkan situs web kami."
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/Neutral800"
+                        android:textSize="15sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Seabank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30sp"
+            android:backgroundTint="@color/Secondary500"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Seabank"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/Neutral900"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/DigitalMarketer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="@color/Primary10"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DigitalMarketerBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Primary500"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Digital Marketer"
+                        android:fontFamily="@font/robotomedium"
+                        android:textColor="@color/White"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DigitalMarketerBlueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/White"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Kami mencari digital marketer yang memiliki pengalaman dalam strategi pemasaran digital dan mampu mengembangkan kampanye yang efektif. Jika Anda memiliki keterampilan ini, kami mengundang Anda untuk bergabung dengan perusahaan kami dan membawa merek kami ke level berikutnya di pasar digital."
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/Neutral800"
+                        android:textSize="15sp" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

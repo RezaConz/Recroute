@@ -73,8 +73,8 @@ class DetailKelas : Fragment(),  View.OnClickListener{
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    myCourse(),
-                    myCourse::class.java.simpleName
+                    WebdeveloperFragment(),
+                    WebdeveloperFragment::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()

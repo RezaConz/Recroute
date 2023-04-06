@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".JobFinder">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingStart="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt; Deskripsi Pekerjaan"
+                android:fontFamily="@font/robotobold"
+                android:textSize="20sp"
+                android:textColor="@color/Neutral800"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="UX Designer"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="16sp"
+                android:textColor="@color/Neutral800"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Paragon Corp."
+                android:fontFamily="@font/robotomedium"
+                android:textSize="14sp"
+                android:textColor="@color/Neutral800"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Full Time | Jakarta | 7-9 juta"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="12sp"
+                android:textColor="@color/Neutral800"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Periode Pendaftaran: 1-30 Maret 2023"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="12sp"
+                android:textColor="@color/Neutral800"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/UXDesigner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30sp"
+            android:backgroundTint="@color/Primary10"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Tentang Perusahaan"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Paragon adalah perusahaan kecantikan Indonesia dengan tujuan menciptakan kebaikan yang lebih besar bagi masyarakat melalui inovasi. Paragon berkomitmen untuk terus berkembang dan memberikan manfaat untuk Indonesia."
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Deskripsi Pekerjaan"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Sebagai UX designer, Anda akan bertugas dalam meneliti, memahami, membuat wireframing, membuat sketsa, membuat prototipe, dan mock up pengalaman pengguna untuk aplikasi dan website perusahaan."
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kriteria yang Dicari"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:text="\t•\tPengalaman selama 1 tahun atau lebih \n\t  (fresh graduate diperbolehkan melamar).
+\n\t•\tBerpengalaman dalam menggunaan \n\t  software UX (Figma, Adobe XD, Miro).
+\n\t•\tPemahaman akan HTML5, CSS3, dan \n\t  JavaScript menjadi nilai tambah.
+\n\t•\tMampu bekerja dan berkolaborasi dalam \n\t  tim."
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Berkas yang Dibutuhkan"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:text="\t•\tPortofolio pribadi\n\t•\tCV terbaru\n\t•\tMengisi berkas sesuai template yang \n\t  disediakan."
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/Neutral800"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonDetailKelas"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            android:width="350dp"
+            android:background="@drawable/button_shape"
+            android:text="Lamar Pekerjaan"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+</ScrollView>

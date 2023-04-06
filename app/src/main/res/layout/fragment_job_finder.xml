@@ -21,19 +21,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Courses"
-                android:textSize="22sp"
-                android:textColor="@color/Black"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="170dp"
-                android:src="@drawable/notification_icon"/>
+                android:text="Pencari Pekerjaan"
+                android:fontFamily="@font/robotobold"
+                android:textSize="20sp"
+                android:textColor="@color/Neutral800"/>
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/MyCourseAktif"
+            android:id="@+id/JobFinderTerkirim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -46,30 +41,32 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="151dp"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/button_white"
-                    android:text="Aktif"
-                    android:textAllCaps="false"
-                    android:textColor="@color/Primary" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="80dp"
                     android:layout_marginTop="5dp"
-                    android:text="Selesai"
+                    android:text="Job"
+                    android:fontFamily="@font/robotobold"
                     android:textColor="@color/White"
                     android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="151dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_white"
+                    android:text="Terkirim"
+                    android:fontFamily="@font/robotobold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Primary" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/MyCoureComplete"
+            android:id="@+id/UIDesignerParagon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -100,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Complete UI/UX Designer"
+                        android:text="UI Designer"
                         android:textSize="15sp"
                         android:textColor="@color/Black"
                         android:fontFamily="@font/robotomedium"
@@ -110,7 +107,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="UI/UX Designer"
+                        android:text="Paragon Corp."
                         android:textSize="11sp"
                         android:textColor="@color/Neutral800"
                         android:fontFamily="@font/robotoregular"
@@ -118,18 +115,21 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="318dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="70dp"
-                android:paddingStart="10dp"
-                android:scaleType="fitXY"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/_0_percent" />
+                android:text="Status: Lamaran direview"
+                android:textSize="11sp"
+                android:textColor="@color/Neutral800"
+                android:fontFamily="@font/robotomedium"
+                />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/MyCourseWordpress"
+            android:id="@+id/UIDesignerSkill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -147,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:paddingStart="10dp"
-                    android:src="@drawable/master_wordpress"
+                    android:src="@drawable/applyjob"
                     />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -160,7 +160,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Master Wordpress"
+                        android:text="UI Designer"
                         android:textSize="15sp"
                         android:textColor="@color/Black"
                         android:fontFamily="@font/robotomedium"
@@ -170,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Web Developer"
+                        android:text="Skill Academy"
                         android:textSize="11sp"
                         android:textColor="@color/Neutral800"
                         android:fontFamily="@font/robotoregular"
@@ -178,14 +178,18 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="318dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="70dp"
-                android:paddingStart="10dp"
-                android:scaleType="fitXY"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/_5_percent" />
+                android:text="Status: Interview dijadwalkan"
+                android:textSize="11sp"
+                android:textColor="@color/Neutral800"
+                android:fontFamily="@font/robotomedium"
+                />
         </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 </RelativeLayout>
