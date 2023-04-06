@@ -6,6 +6,4 @@
         <item name="colorAccent">@color/Black</item>
         <item name="colorBackgroundFloating">@color/White</item>
     </style>
-    
-
 </resources>

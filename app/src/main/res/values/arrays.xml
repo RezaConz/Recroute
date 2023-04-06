@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ld_activityScreenTitles">
+        <item>Dashboard</item>
+        <item>My Course</item>
+        <item>Pesanan</item>
+        <item>Notifikasi</item>
+        <item>Reward</item>
+        <item>Pengaturan</item>
+        <item>Bantuan</item>
+        <item>Kebijakan Privasi</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item></item>
+        <item>@drawable/icon_mycourse</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </array>
+</resources>

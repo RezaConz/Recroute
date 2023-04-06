@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.belajar.databinding.FragmentDetailKelasBinding
-import com.example.belajar.databinding.FragmentWebdeveloperBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -50,7 +49,7 @@ class DetailKelas : Fragment(),  View.OnClickListener{
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonDetailKelas.setOnClickListener(this)
-        binding.backDetailKelas.setOnClickListener(this)
+        binding.DetailKelas.setOnClickListener(this)
 
 
     }
@@ -68,7 +67,7 @@ class DetailKelas : Fragment(),  View.OnClickListener{
                 commit()
             }
         }
-        if (v.id == R.id.backDetailKelas) {
+        if (v.id == R.id.DetailKelas) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
