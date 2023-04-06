@@ -19,6 +19,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/backDeskripsi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="&lt; Deskripsi Pekerjaan"
@@ -179,11 +180,11 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/buttonDetailKelas"
+            android:id="@+id/buttonLamar"
             android:layout_width="335dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="100dp"
             android:width="350dp"
             android:background="@drawable/button_shape"
             android:text="Lamar Pekerjaan"

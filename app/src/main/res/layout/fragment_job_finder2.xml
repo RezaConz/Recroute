@@ -277,7 +277,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="40dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="10dp"
                         android:text="Kami mencari digital marketer yang memiliki pengalaman dalam strategi pemasaran digital dan mampu mengembangkan kampanye yang efektif. Jika Anda memiliki keterampilan ini, kami mengundang Anda untuk bergabung dengan perusahaan kami dan membawa merek kami ke level berikutnya di pasar digital."

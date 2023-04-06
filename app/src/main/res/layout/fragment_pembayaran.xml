@@ -209,6 +209,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
                 android:backgroundTint="@color/Primary">
 
                 <LinearLayout
@@ -248,7 +249,7 @@
                        android:layout_height="wrap_content"
                        android:layout_marginLeft="30dp"
                        android:layout_marginTop="90dp"
-                       android:layout_marginBottom="15dp"
+                       android:layout_marginBottom="20dp"
                        android:width="350dp"
                        android:background="@drawable/button_white"
                        android:text="Beli"

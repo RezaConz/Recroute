@@ -1,14 +1,432 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RewardFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Reward">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/RewardUname"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/robotobold"
+            android:text="Bambang Gaming"
+            android:textColor="@color/Neutral800"
+            android:textSize="22sp"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/poin_reward"/>
+
+        <ImageView
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/jenis_reward" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rewardKFC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30sp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/reward_kfc"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="KFC\nGRATIS 1 WINGER"
+                        android:textSize="12sp"
+                        android:textColor="@color/Black800"
+                        android:fontFamily="@font/robotobold"
+                        android:paddingStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Berlaku di seluruh\ncabang"
+                        android:fontFamily="@font/robotomedium"
+                        android:textSize="11sp"
+                        android:textColor="@color/Neutral500" />
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/reward_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Warning900"
+                            android:paddingStart="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="20"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rewardSbux"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30sp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/reward_sbux"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="STARBUCKS\nBELI 1 GRATIS 1"
+                        android:textSize="12sp"
+                        android:textColor="@color/Black800"
+                        android:fontFamily="@font/robotobold"
+                        android:paddingStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Berlaku 7 hari setelah penukaran poin"
+                        android:fontFamily="@font/robotomedium"
+                        android:textSize="11sp"
+                        android:textColor="@color/Neutral500" />
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/reward_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Warning900"
+                            android:paddingStart="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="15"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rewardGramedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30sp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/reward_gramedia"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Gramedia\nDiskon hingga 90%"
+                        android:textSize="12sp"
+                        android:textColor="@color/Black800"
+                        android:fontFamily="@font/robotobold"
+                        android:paddingStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Berlaku 30 Januari -\n8 Februari 2023"
+                        android:fontFamily="@font/robotomedium"
+                        android:textSize="11sp"
+                        android:textColor="@color/Neutral500" />
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/reward_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Warning900"
+                            android:paddingStart="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="48"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rewardSomethinc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30sp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/reward_somethinc"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Somethinc\nGratis 2 Salmon Serum"
+                        android:textSize="12sp"
+                        android:textColor="@color/Black800"
+                        android:fontFamily="@font/robotobold"
+                        android:paddingStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Berlaku di seluruh toko resmi Somethinc"
+                        android:fontFamily="@font/robotomedium"
+                        android:textSize="11sp"
+                        android:textColor="@color/Neutral500" />
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/reward_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Warning900"
+                            android:paddingStart="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="55"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="70dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rewardMackbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30sp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/reward_mackbook"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="IBOX\nFree Macbook PRO 16"
+                        android:textSize="12sp"
+                        android:textColor="@color/Black800"
+                        android:fontFamily="@font/robotobold"
+                        android:paddingStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Berlaku di\nJABODETABEK"
+                        android:fontFamily="@font/robotomedium"
+                        android:textSize="11sp"
+                        android:textColor="@color/Neutral500" />
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/reward_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Warning900"
+                            android:paddingStart="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="6000"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rewardHnM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30sp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/reward_hnm"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="HnM\nFree fit Hoodie"
+                        android:textSize="12sp"
+                        android:textColor="@color/Black800"
+                        android:fontFamily="@font/robotobold"
+                        android:paddingStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Berlaku di seluruh\nHnM Indonesia"
+                        android:fontFamily="@font/robotomedium"
+                        android:textSize="11sp"
+                        android:textColor="@color/Neutral500" />
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/reward_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Warning900"
+                            android:paddingStart="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="75"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

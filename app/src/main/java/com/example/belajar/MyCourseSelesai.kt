@@ -37,6 +37,7 @@ class MyCourseSelesai : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.MyCourseSelesai.setOnClickListener(this)
+        binding.notification.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -47,6 +48,18 @@ class MyCourseSelesai : Fragment(), View.OnClickListener {
                     R.id.frame_layout,
                     MyCourseAktif(),
                     MyCourseAktif::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
+        if (v.id == R.id.notification){
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    Notifikasi(),
+                    Notifikasi::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()

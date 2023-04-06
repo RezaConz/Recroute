@@ -5,59 +5,40 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.belajar.databinding.FragmentCourseBinding
+import com.example.belajar.databinding.FragmentPesananAktifBinding
+import com.example.belajar.databinding.FragmentPesananSelesaiBinding
 
-class CourseFragment : Fragment(), View.OnClickListener {
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
-    private lateinit var binding: FragmentCourseBinding
-
+class PesananSelesai : Fragment(), View.OnClickListener {
+    private lateinit var binding: FragmentPesananSelesaiBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentCourseBinding.inflate(inflater,container,false)
+        binding = FragmentPesananSelesaiBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.courseAktif1.setOnClickListener(this)
-        binding.courseSelesaiButton.setOnClickListener(this)
-        binding.notifCourseAktif.setOnClickListener(this)
+        binding.PesananSelesai.setOnClickListener(this)
+        binding.notification.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.courseAktif_1) {
+        if (v.id == R.id.PesananSelesai){
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    DaftarmodulFragment(),
-                    DaftarmodulFragment::class.java.simpleName
+                    PesananAktif(),
+                    PesananAktif::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
             }
-        }else if (v.id == R.id.course_selesai_button) {
-            val mFragmentManager = parentFragmentManager
-            mFragmentManager.beginTransaction().apply {
-                replace(
-                    R.id.frame_layout,
-                    CourseselesaiFragment(),
-                    CourseselesaiFragment::class.java.simpleName
-                )
-                addToBackStack(null)
-                commit()
-            }
-        }else if (v.id == R.id.notif_course_aktif) {
+        }
+        if (v.id == R.id.notification){
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
@@ -70,6 +51,4 @@ class CourseFragment : Fragment(), View.OnClickListener {
             }
         }
     }
-
-
 }

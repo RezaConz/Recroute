@@ -30,11 +30,6 @@ class Pembayaran : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.pembayaranKodePromo.setOnClickListener {
-//            val builder = AlertDialog.Builder(this)
-//            val view = layoutInflater.inflate(R.layout.fragment_popup_diskon,null)
-//            builder.setView(view)
-//        }
         auth = FirebaseAuth.getInstance()
         val user = auth.currentUser
 
@@ -44,7 +39,7 @@ class Pembayaran : Fragment(), View.OnClickListener {
         }
         binding.buttonpembayaran.setOnClickListener(this)
         binding.Backpembayaran.setOnClickListener(this)
-//        binding.pembayaranKodePromo.setOnClickListener(this)
+        binding.pembayaranKodePromo.setOnClickListener(this)
         binding.pembayaraMetodePembayaran.setOnClickListener(this)
     }
 
@@ -73,18 +68,18 @@ class Pembayaran : Fragment(), View.OnClickListener {
                 commit()
             }
         }
-//        if (v.id == R.id.pembayaranKodePromo) {
-//            val mFragmentManager = parentFragmentManager
-//            mFragmentManager.beginTransaction().apply {
-//                replace(
-//                    R.id.frame_layout,
-//                    PopupDiskon(),
-//                    PopupDiskon::class.java.simpleName
-//                )
-//                addToBackStack(null)
-//                commit()
-//            }
-//        }
+        if (v.id == R.id.pembayaranKodePromo) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    PopupDiskon(),
+                    PopupDiskon::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
         if (v.id == R.id.pembayaraMetodePembayaran) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
