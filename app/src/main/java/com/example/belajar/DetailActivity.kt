@@ -28,7 +28,7 @@ class DetailActivity : AppCompatActivity(){
                 R.id.ic_home -> replaceFragment(home())
                 R.id.ic_mycourse -> replaceFragment(myCourse())
                 R.id.ic_ranking -> replaceFragment(ranking())
-                R.id.ic_jobfind -> replaceFragment(jobFind())
+                R.id.ic_jobfind -> replaceFragment(JobFinder2())
                 R.id.ic_profil -> replaceFragment(profil())
             else ->{
 
