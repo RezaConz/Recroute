@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserinterfacedesignFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="match_parent"
+           android:layout_height="174dp"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginStart="0dp"
+           android:layout_marginTop="0dp"
+           android:src="@drawable/frame_userinterface" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pada materi kali ini, kita akan belajar mengenai User Interface design. Desain UI atau user interface adalah proses membangun antarmuka yang fokus pada gaya dan tampilan yang interaktif bagi pengguna.
+\n\nTujuannya untuk membuat tampilan antarmuka yang sederhana, mudah diakses oleh pengguna dan menyenangkan secara estetika. Agar kamu lebih paham dengan materi ini, kami sudah siapkan video pembelajaran yang dapat disaksikan di bawah ini, ya!"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/Black800"
+            android:textSize="13sp"/>
+
+       <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30sp"
+           android:layout_marginEnd="30sp"
+           android:layout_marginTop="50dp"
+           android:id="@+id/youtubePlayer"
+           app:autoPlay="false"
+           app:videoId="uwNClNmekGU"
+           />
+
+       <Button
+           android:id="@+id/nextMateri"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginStart="30sp"
+           android:layout_marginEnd="30dp"
+           android:text="Materi Berikutnya"
+           android:textColor="#FFFFFF"
+           android:background="@drawable/button_shape"
+           android:textSize="14sp"
+           />
+   </LinearLayout>
+
+
+</RelativeLayout>
