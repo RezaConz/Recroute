@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PopupDiskon">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/popupDiskon"
+        android:id="@+id/popupLamaran"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30sp"
@@ -25,14 +25,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/diskon_belum_tersedia"/>
+                android:src="@drawable/checklist"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
-                android:text="Maaf, Diskon Belum Tersedia"
+                android:text="Lamaran Berhasil Dikirim"
                 android:fontFamily="@font/robotobold"
                 android:textSize="16sp"
                 android:textColor="@color/Neutral800"/>
@@ -44,43 +44,20 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Untuk saat ini aplikasi Recrout belum"
+                android:text="Formulir lamaranmu sedang diproses. \n\t\t\t\t\t\t\t\tTunggu hasilnya ya! "
                 android:fontFamily="@font/robotoregular"
                 android:textSize="14sp"
                 android:textColor="@color/Neutral800"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="menyediakan diskon Coba lagi di lain "
-                android:fontFamily="@font/robotoregular"
-                android:textSize="14sp"
-                android:textColor="@color/Neutral800"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="waktu ya!"
-                android:fontFamily="@font/robotoregular"
-                android:textSize="14sp"
-                android:textColor="@color/Neutral800"/>
-
-
 
             <Button
-                android:id="@+id/buttonPopupDiskon"
+                android:id="@+id/buttonPopupLamaran"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button_shape"
-                android:text="Kembali"
+                android:text="Masuk"
                 android:textAllCaps="false"
                 android:textColor="@color/White" />
         </LinearLayout>

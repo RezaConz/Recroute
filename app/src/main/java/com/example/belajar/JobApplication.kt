@@ -1,10 +1,13 @@
 package com.example.belajar
 
+import android.app.AlertDialog
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.example.belajar.databinding.FragmentJobApplicationBinding
 import com.example.belajar.databinding.FragmentJobDescriptionBinding
 
@@ -26,7 +29,7 @@ class JobApplication : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.backLamaran){
+        if (v.id == R.id.backLamaran) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
@@ -38,7 +41,7 @@ class JobApplication : Fragment(), View.OnClickListener {
                 commit()
             }
         }
-        if (v.id == R.id.unduhTemplate){
+        if (v.id == R.id.unduhTemplate) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
@@ -50,17 +53,29 @@ class JobApplication : Fragment(), View.OnClickListener {
                 commit()
             }
         }
-        if (v.id == R.id.kirim){
-            val mFragmentManager = parentFragmentManager
-            mFragmentManager.beginTransaction().apply {
-                replace(
-                    R.id.frame_layout,
-                    PopupLamaran(),
-                    PopupLamaran::class.java.simpleName
-                )
-                addToBackStack(null)
-                commit()
+        if (v.id == R.id.kirim) {
+            val builder = AlertDialog.Builder(requireContext())
+            val view = layoutInflater.inflate(R.layout.popup_lamaran, null)
+            builder.setView(view)
+            val dialog = builder.create()
+
+            view.findViewById<Button>(R.id.buttonPopupLamaran).setOnClickListener {
+                val mFragmentManager = parentFragmentManager
+                mFragmentManager.beginTransaction().apply {
+                    replace(
+                        R.id.frame_layout,
+                        JobApplication(),
+                        JobApplication::class.java.simpleName
+                    )
+                    addToBackStack(null)
+                    commit()
+                }
+                dialog.dismiss()
             }
+            if (dialog.window != null) {
+                dialog.window!!.setBackgroundDrawable(ColorDrawable(0))
+            }
+            dialog.show()
         }
     }
 }

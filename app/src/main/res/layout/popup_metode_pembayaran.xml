@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:gravity="center"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/popupMetodePembayaran"
@@ -157,7 +157,7 @@
             </RadioGroup>
 
             <Button
-                android:id="@+id/buttonPopupMetodePembayaran"
+                android:id="@+id/pilih_metode"
                 android:layout_width="204dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
@@ -169,4 +169,5 @@
                 android:textColor="@color/White" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>
