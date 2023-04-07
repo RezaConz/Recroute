@@ -44,7 +44,7 @@ class Pembayaran : Fragment(), View.OnClickListener {
         }
         binding.buttonpembayaran.setOnClickListener(this)
         binding.Backpembayaran.setOnClickListener(this)
-//        binding.pembayaranKodePromo.setOnClickListener(this)
+        binding.pembayaranKodePromo.setOnClickListener(this)
         binding.pembayaraMetodePembayaran.setOnClickListener(this)
     }
 
@@ -73,18 +73,18 @@ class Pembayaran : Fragment(), View.OnClickListener {
                 commit()
             }
         }
-//        if (v.id == R.id.pembayaranKodePromo) {
-//            val mFragmentManager = parentFragmentManager
-//            mFragmentManager.beginTransaction().apply {
-//                replace(
-//                    R.id.frame_layout,
-//                    PopupDiskon(),
-//                    PopupDiskon::class.java.simpleName
-//                )
-//                addToBackStack(null)
-//                commit()
-//            }
-//        }
+        if (v.id == R.id.pembayaranKodePromo) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    Promo(),
+                    Promo::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
         if (v.id == R.id.pembayaraMetodePembayaran) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {

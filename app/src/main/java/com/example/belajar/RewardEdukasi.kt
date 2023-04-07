@@ -5,12 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.belajar.databinding.FragmentRewardBinding
+import com.example.belajar.databinding.FragmentRewardBelanjaBinding
+import com.example.belajar.databinding.FragmentRewardEdukasiBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class Reward : Fragment(), View.OnClickListener {
-
-    private lateinit var binding : FragmentRewardBinding
+class RewardEdukasi : Fragment(), View.OnClickListener {
+    private lateinit var binding : FragmentRewardEdukasiBinding
     lateinit var auth : FirebaseAuth
 
     override fun onCreateView(
@@ -18,7 +18,7 @@ class Reward : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentRewardBinding.inflate(inflater, container, false)
+        binding = FragmentRewardEdukasiBinding.inflate(inflater, container, false)
         return binding.root
     }
 

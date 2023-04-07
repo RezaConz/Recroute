@@ -40,7 +40,7 @@
                 android:layout_below="@+id/logoSP2"
                 android:layout_gravity="center"
                 android:fontFamily="@font/robotobold"
-                android:text="WELCOME TO OUR APP"
+                android:text="SELAMAT DATANG"
                 android:textColor="@color/Neutral800"
                 android:textSize="26sp" />
 

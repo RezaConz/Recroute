@@ -27,6 +27,7 @@ class CheckOut : Fragment(), View.OnClickListener {
         binding.backNotifikasi.setOnClickListener(this)
         binding.buttonBayar.setOnClickListener(this)
         binding.copyButton.setOnClickListener(this)
+        binding.petunjuKPembayaran.setOnClickListener(this)
 //        binding.copyButton.setOnClickListener {
 //            val myClipboard: ClipboardManager = DetailActivity.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
 //            val myClip: ClipData
@@ -53,6 +54,18 @@ class CheckOut : Fragment(), View.OnClickListener {
                     R.id.frame_layout,
                     Notifikasi(),
                     Notifikasi::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
+        if (v.id == R.id.petunjuKPembayaran) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    WebViewCaraPembayaran(),
+                    WebViewCaraPembayaran::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()

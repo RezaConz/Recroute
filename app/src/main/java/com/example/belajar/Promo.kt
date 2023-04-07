@@ -6,35 +6,47 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.belajar.databinding.FragmentPopupDiskonBinding
-import com.example.belajar.databinding.FragmentPopupLamaranBinding
+import com.example.belajar.databinding.FragmentPromoBinding
 
-class PopupLamaran : Fragment(), View.OnClickListener {
-
-    private lateinit var binding : FragmentPopupLamaranBinding
+class Promo : Fragment(), View.OnClickListener {
+    private lateinit var binding : FragmentPromoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentPopupLamaranBinding.inflate(inflater, container, false)
+        binding = FragmentPromoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonPopupLamaran.setOnClickListener(this)
+        binding.kembaliPembayaran.setOnClickListener(this)
+        binding.BackPromo.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.buttonPopupLamaran) {
+        if (v.id == R.id.kembaliPembayaran) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    JobFinder(),
-                    JobFinder::class.java.simpleName
+                    Pembayaran(),
+                    Pembayaran::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
+        if (v.id == R.id.BackPromo) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    Pembayaran(),
+                    Pembayaran::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
