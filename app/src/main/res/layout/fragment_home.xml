@@ -58,7 +58,7 @@
                 android:layout_marginTop="-20dp"
                 android:paddingStart="30sp"
                 android:paddingEnd="30sp"
-                android:src="@drawable/poin_ranking" />
+                android:src="@drawable/user_stats" />
 
             <TextView
                 android:id="@+id/rekomendasi_kelas"
@@ -206,6 +206,7 @@
                     tools:ignore="UselessParent">
 
                     <Button
+                        android:id="@+id/button_webdev"
                         android:layout_width="160dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="30sp"

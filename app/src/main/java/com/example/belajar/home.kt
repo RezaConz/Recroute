@@ -1,6 +1,7 @@
 package com.example.belajar
 
 import android.os.Bundle
+import android.service.notification.NotificationListenerService.Ranking
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -61,6 +62,10 @@ class home : Fragment(), View.OnClickListener {
 //        toggle.syncState()
 
         binding.hamburger.setOnClickListener(this)
+        binding.rekomendasiKelas.setOnClickListener(this)
+        binding.leader.setOnClickListener(this)
+        binding.seluruhKelas.setOnClickListener(this)
+        binding.buttonWebdev.setOnClickListener(this)
     }
 
      override fun onClick(v: View) {
@@ -71,6 +76,50 @@ class home : Fragment(), View.OnClickListener {
                     R.id.frame_layout,
                     HamburgerFragment(),
                     HamburgerFragment::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }else if (v.id == R.id.rekomendasi_kelas) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    WebdeveloperFragment(),
+                    WebdeveloperFragment::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }else if (v.id == R.id.leader) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    ranking(),
+                    ranking::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }else if (v.id == R.id.seluruh_kelas) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    myCourse(),
+                    myCourse::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }else if (v.id == R.id.button_webdev) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    WebdeveloperFragment(),
+                    WebdeveloperFragment::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()

@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.storage.StorageReference
 
-class profil : Fragment() {
+class profil : Fragment(), View.OnClickListener {
 
     private lateinit var binding: FragmentProfilBinding
     private lateinit var auth: FirebaseAuth
@@ -43,6 +43,23 @@ class profil : Fragment() {
         if (user != null){
             binding.usernameProfil.text = user.displayName
             binding.emailUser.text = user.email
+        }
+
+        binding.editProfil.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View) {
+        if (v.id == R.id.edit_profil) {
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_layout,
+                    ProfilupdateFragment(),
+                    ProfilupdateFragment::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
         }
     }
 }
