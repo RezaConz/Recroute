@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.belajar.databinding.FragmentHamburgerBinding
-import com.example.belajar.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class HamburgerFragment : Fragment(), View.OnClickListener {
@@ -56,8 +55,8 @@ class HamburgerFragment : Fragment(), View.OnClickListener {
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    CourseFragment(),
-                    CourseFragment::class.java.simpleName
+                    MyCourseAktif(),
+                    MyCourseAktif::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
@@ -67,8 +66,8 @@ class HamburgerFragment : Fragment(), View.OnClickListener {
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    PesananFragment(),
-                    PesananFragment::class.java.simpleName
+                    PesananAktif(),
+                    PesananAktif::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
@@ -78,8 +77,8 @@ class HamburgerFragment : Fragment(), View.OnClickListener {
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    NotifFragment(),
-                    NotifFragment::class.java.simpleName
+                    Notifikasi(),
+                    Notifikasi::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
@@ -89,8 +88,8 @@ class HamburgerFragment : Fragment(), View.OnClickListener {
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    RewardFragment(),
-                    RewardFragment::class.java.simpleName
+                    Reward(),
+                    Reward::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()

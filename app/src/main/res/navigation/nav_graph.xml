@@ -26,7 +26,7 @@
         tools:layout="@layout/fragment_notif" />
     <fragment
         android:id="@+id/nav_reward"
-        android:name="com.example.belajar.RewardFragment"
+        android:name="com.example.belajar.Reward"
         android:label="fragment_reward"
         tools:layout="@layout/fragment_reward" />
 

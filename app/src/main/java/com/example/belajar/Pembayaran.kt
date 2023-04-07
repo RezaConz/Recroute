@@ -1,11 +1,8 @@
 package com.example.belajar
 
 import android.app.AlertDialog
-import android.app.ProgressDialog
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -88,7 +85,7 @@ class Pembayaran : Fragment(), View.OnClickListener {
 //                commit()
 //            }
 //        }
-        else if (v.id == R.id.pembayaraMetodePembayaran) {
+        if (v.id == R.id.pembayaraMetodePembayaran) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
@@ -99,18 +96,6 @@ class Pembayaran : Fragment(), View.OnClickListener {
                 addToBackStack(null)
                 commit()
             }
-//            val builder = AlertDialog.Builder(requireActivity())
-//            val view = layoutInflater.inflate(R.layout.fragment_pop_up_metode_pembayaran,null)
-//            builder.setView(view)
-//            val dialog = builder.create()
-//            view.findViewById<Button>(R.id.popupMetodePembayaran).setOnClickListener {
-////                cekEmail(userEmail)
-//                dialog.dismiss()
-//            }
-//            if (dialog.window != null){
-//                dialog.window!!.setBackgroundDrawable(ColorDrawable(0))
-//            }
-//            dialog.show()
         }
     }
 }
