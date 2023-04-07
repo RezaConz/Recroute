@@ -276,7 +276,7 @@
                         android:layout_height="50dp"
                         android:layout_marginStart="10sp"
                         android:layout_marginEnd="30sp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="70dp"
                         android:background="@drawable/button_shape_yellow"
                         android:text="Illustrator"
                         android:fontFamily="@font/robotomedium"

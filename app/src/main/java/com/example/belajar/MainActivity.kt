@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         }
         Daftar.setOnClickListener {
             if (MasukanUsername.text.isNotEmpty()&&MasukanEmail.text.isNotEmpty()&&MasukanPassword.text.isNotEmpty()){
-                val User = User(MasukanUsername.text.toString(),MasukanEmail.text.toString())
+                val User = User(MasukanUsername.text.toString())
                 database.child(MasukanUsername.text.toString()).setValue(User)
                 prosesRegister()
             }else{
