@@ -5,15 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.belajar.databinding.FragmentUserinterfacedesignBinding
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.PlayerConstants
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.YouTubePlayerListener
+import com.example.belajar.databinding.FragmentUjianakhirBinding
 
-class UserinterfacedesignFragment : Fragment(), View.OnClickListener {
+class UjianakhirFragment : Fragment(), View.OnClickListener {
 
-    private lateinit var binding: FragmentUserinterfacedesignBinding
+    private lateinit var binding: FragmentUjianakhirBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,24 +20,24 @@ class UserinterfacedesignFragment : Fragment(), View.OnClickListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentUserinterfacedesignBinding.inflate(inflater,container,false)
+        binding = FragmentUjianakhirBinding.inflate(inflater,container,false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.nextMateri.setOnClickListener(this)
 
+        binding.nextKerjakan.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.nextMateri) {
+        if (v.id == R.id.nextKerjakan) {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.beginTransaction().apply {
                 replace(
                     R.id.frame_layout,
-                    UjianakhirFragment(),
-                    UjianakhirFragment::class.java.simpleName
+                    SoalujianFragment(),
+                    SoalujianFragment::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()
