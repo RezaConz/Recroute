@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".profil">
 
     <LinearLayout
@@ -29,14 +30,304 @@
             android:id="@+id/username_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="test"
             android:layout_marginTop="-70dp"
             android:textColor="@color/White"
             android:layout_marginStart="150dp"
             android:fontFamily="@font/robotoregular"
             android:textSize="25dp"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mencari Pekerjaan"
+            android:textColor="@color/White"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="12dp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_points__1_"
+            android:layout_marginHorizontal="30sp"
+            android:layout_marginTop="80sp"
+            android:scaleType="fitXY"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30sp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usia                                  :  "
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat Email                  :  "
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/email_user"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="test@gmail.com"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat                             :  "
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bergabung Sejak           :  "
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi User                :  "
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="12sp"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="12sp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit profil"
+                    android:textColor="@color/Primary"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="end"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="30sp"
+            android:src="@drawable/frame_penilaian_ketrampilan"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginHorizontal="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Data Science"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/Black"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="80dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Mobile Development"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/Black"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="UI / UX Design"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/Black"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="70dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Web Developer"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/Black"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="68dp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selengkapnya"
+                    android:textColor="@color/Primary"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/riwayatkelas_profil"
+            android:layout_marginHorizontal="30sp"
+            android:scaleType="fitXY"/>
+
 
     </LinearLayout>
 
-</RelativeLayout>
+</ScrollView>
