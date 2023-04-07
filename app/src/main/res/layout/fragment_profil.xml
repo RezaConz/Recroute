@@ -5,32 +5,38 @@
     android:layout_height="match_parent"
     tools:context=".profil">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/testing"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_profil"
+            android:scaleType="fitXY"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="-95dp"
+            android:src="@drawable/user_icon"
+            android:layout_marginHorizontal="40sp"/>
         <TextView
-            android:id="@+id/text_profil"
+            android:id="@+id/username_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/profil"
-            android:textSize="25sp"
-            android:textColor="@color/Primary"
-            android:layout_centerInParent="true"
+            android:text=""
+            android:layout_marginTop="-70dp"
+            android:textColor="@color/White"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="25dp"
             />
 
-        <Button
-            android:id="@+id/logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_profil"
-            android:layout_marginTop="25dp"
-            android:text="Log Out"
-            android:textColor="@color/White"
-            android:layout_centerInParent="true"
-            android:background="@drawable/button_shape"
-            />
-    </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>

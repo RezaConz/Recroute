@@ -12,6 +12,9 @@ import com.google.firebase.auth.FirebaseAuth
 class profil : Fragment() {
 
     private lateinit var binding: FragmentProfilBinding
+    private lateinit var auth: FirebaseAuth
+//    private lateinit var databaseReferene: DatabaseReference
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,10 +32,6 @@ class profil : Fragment() {
     var firebaseAuth = FirebaseAuth.getInstance()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.logout.setOnClickListener{
-            firebaseAuth.signOut()
-            startActivity(Intent(context, LoginActivity::class.java))
-            activity?.finish()
-        }
+
     }
 }

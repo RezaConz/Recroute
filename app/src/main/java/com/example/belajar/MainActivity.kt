@@ -13,6 +13,8 @@ import android.widget.Toast.LENGTH_SHORT
 import com.example.belajar.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,9 +34,13 @@ class MainActivity : AppCompatActivity() {
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Logging")
         progressDialog.setMessage("Mohon tunggu")
+
+        database = FirebaseDatabase.getInstance().getReference("Users")
     }
 
     var firebaseAuth = FirebaseAuth.getInstance()
+    private lateinit var database: DatabaseReference
+
 
     override fun onStart() {
         super.onStart()
@@ -52,6 +58,8 @@ class MainActivity : AppCompatActivity() {
         }
         Daftar.setOnClickListener {
             if (MasukanUsername.text.isNotEmpty()&&MasukanEmail.text.isNotEmpty()&&MasukanPassword.text.isNotEmpty()){
+                val User = User(MasukanUsername.text.toString(),MasukanEmail.text.toString())
+                database.child(MasukanUsername.text.toString()).setValue(User)
                 prosesRegister()
             }else{
                 Toast.makeText( this, "Data belum lengkap terisi", LENGTH_SHORT).show()
