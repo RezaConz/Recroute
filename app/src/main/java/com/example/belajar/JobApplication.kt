@@ -64,8 +64,8 @@ class JobApplication : Fragment(), View.OnClickListener {
                 mFragmentManager.beginTransaction().apply {
                     replace(
                         R.id.frame_layout,
-                        JobApplication(),
-                        JobApplication::class.java.simpleName
+                        home(),
+                        home::class.java.simpleName
                     )
                     addToBackStack(null)
                     commit()

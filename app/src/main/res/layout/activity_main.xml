@@ -24,7 +24,7 @@
         android:textSize="32dp"
         android:fontFamily="@font/robotobold"
         android:textColor="@color/Black"
-        android:text="Sign Up"></TextView>
+        android:text="Registrasi"></TextView>
 
 
     <LinearLayout
@@ -118,16 +118,15 @@
 
     <Button
         android:id="@+id/Daftar"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/Input"
-        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_shape"
         android:text="Daftar"
         android:textColor="#FFFFFF"
-        android:background="@drawable/button_shape"
-        android:textSize="14dp"
-        />
+        android:textSize="14dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
